@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace rgzTU
@@ -21,10 +14,10 @@ namespace rgzTU
 
         private void startBTN_Click(object sender, EventArgs e)
         {
-            double[] mas1 = new double[Convert.ToInt32(Convert.ToInt32(timeTB.Text) / Convert.ToDouble(stepTB.Text))];
-            double[] mas2 = new double[Convert.ToInt32(Convert.ToInt32(timeTB.Text) / Convert.ToDouble(stepTB.Text))];
-            double[] mas3 = new double[Convert.ToInt32(Convert.ToInt32(timeTB.Text) / Convert.ToDouble(stepTB.Text))];
-            double[] mas4 = new double[Convert.ToInt32(Convert.ToInt32(timeTB.Text) / Convert.ToDouble(stepTB.Text))];
+            double[] mas1 = new double[Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text))];
+            double[] mas2 = new double[Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text))];
+            double[] mas3 = new double[Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text))];
+            double[] mas4 = new double[Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text))];
 
             mas1[0] = 0;
             mas2[0] = 0;
@@ -42,7 +35,7 @@ namespace rgzTU
 
                 double f = Convert.ToDouble(poweringTB.Text) * epsPast;
                 //chart1.Series[0].Points.AddXY(t, f);
-                if (iterator != Convert.ToInt32(Convert.ToInt32(timeTB.Text) / Convert.ToDouble(stepTB.Text)))
+                if (iterator != Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text)))
                 {
                     mas3[iterator] = t;
                     mas4[iterator] = f;
@@ -54,8 +47,8 @@ namespace rgzTU
                     -
                     (
                         shit
-                        -
-                        poop
+                        //-
+                        //poop
                     ));
 
                 UyPast = Convert.ToDouble(poweringTB.Text) * secondDifference; //ЦМ усилительного звена
@@ -79,7 +72,7 @@ namespace rgzTU
                 //Console.WriteLine($"Время {t}: Uak2={Uak} ");
 
                 //chart1.Series[1].Points.AddXY(t, Uak);
-                if(iterator != Convert.ToInt32(Convert.ToInt32(timeTB.Text) / Convert.ToDouble(stepTB.Text)))
+                if(iterator != Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text)))
                 {
                     mas1[iterator] = t;
                     mas2[iterator] = Uak;

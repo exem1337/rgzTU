@@ -70,10 +70,13 @@ namespace rgzTU
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(12, 148);
             this.chart1.Name = "chart1";
+            series1.BorderWidth = 4;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
+            series1.MarkerBorderWidth = 3;
             series1.Name = "Series1";
+            series2.BorderWidth = 4;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -100,7 +103,7 @@ namespace rgzTU
             this.poweringTB.Name = "poweringTB";
             this.poweringTB.Size = new System.Drawing.Size(76, 20);
             this.poweringTB.TabIndex = 2;
-            this.poweringTB.Text = "10";
+            this.poweringTB.Text = "5";
             // 
             // label2
             // 
@@ -117,7 +120,7 @@ namespace rgzTU
             this.k1TB.Name = "k1TB";
             this.k1TB.Size = new System.Drawing.Size(100, 20);
             this.k1TB.TabIndex = 4;
-            this.k1TB.Text = "9";
+            this.k1TB.Text = "10";
             // 
             // t1TB
             // 
@@ -133,7 +136,7 @@ namespace rgzTU
             this.t2TB.Name = "t2TB";
             this.t2TB.Size = new System.Drawing.Size(100, 20);
             this.t2TB.TabIndex = 8;
-            this.t2TB.Text = "2";
+            this.t2TB.Text = "4";
             // 
             // k2TB
             // 
@@ -141,7 +144,7 @@ namespace rgzTU
             this.k2TB.Name = "k2TB";
             this.k2TB.Size = new System.Drawing.Size(100, 20);
             this.k2TB.TabIndex = 7;
-            this.k2TB.Text = "3";
+            this.k2TB.Text = "1";
             // 
             // label3
             // 
@@ -193,7 +196,7 @@ namespace rgzTU
             this.timeTB.Name = "timeTB";
             this.timeTB.Size = new System.Drawing.Size(100, 20);
             this.timeTB.TabIndex = 13;
-            this.timeTB.Text = "10";
+            this.timeTB.Text = "1";
             // 
             // controlTB
             // 
@@ -201,7 +204,7 @@ namespace rgzTU
             this.controlTB.Name = "controlTB";
             this.controlTB.Size = new System.Drawing.Size(100, 20);
             this.controlTB.TabIndex = 14;
-            this.controlTB.Text = "4";
+            this.controlTB.Text = "5";
             // 
             // startBTN
             // 
