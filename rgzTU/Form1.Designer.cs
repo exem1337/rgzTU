@@ -196,7 +196,7 @@ namespace rgzTU
             this.timeTB.Name = "timeTB";
             this.timeTB.Size = new System.Drawing.Size(100, 20);
             this.timeTB.TabIndex = 13;
-            this.timeTB.Text = "1";
+            this.timeTB.Text = "10";
             // 
             // controlTB
             // 
