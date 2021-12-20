@@ -188,7 +188,7 @@ namespace rgzTU
             this.stepTB.Name = "stepTB";
             this.stepTB.Size = new System.Drawing.Size(100, 20);
             this.stepTB.TabIndex = 12;
-            this.stepTB.Text = "0,001";
+            this.stepTB.Text = "0,01";
             // 
             // timeTB
             // 
