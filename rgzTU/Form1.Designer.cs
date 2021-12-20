@@ -50,7 +50,6 @@ namespace rgzTU
             this.timeTB = new System.Windows.Forms.TextBox();
             this.controlTB = new System.Windows.Forms.TextBox();
             this.startBTN = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.integratorTB = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@ namespace rgzTU
             this.label9 = new System.Windows.Forms.Label();
             this.powering2TB = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +68,7 @@ namespace rgzTU
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(12, 148);
+            this.chart1.Location = new System.Drawing.Point(12, 220);
             this.chart1.Name = "chart1";
             series1.BorderWidth = 4;
             series1.ChartArea = "ChartArea1";
@@ -84,14 +84,14 @@ namespace rgzTU
             series2.Name = "Series2";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(938, 479);
+            this.chart1.Size = new System.Drawing.Size(791, 407);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1012, 16);
+            this.label1.Location = new System.Drawing.Point(824, 254);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 1;
@@ -99,16 +99,16 @@ namespace rgzTU
             // 
             // poweringTB
             // 
-            this.poweringTB.Location = new System.Drawing.Point(1080, 13);
+            this.poweringTB.Location = new System.Drawing.Point(914, 251);
             this.poweringTB.Name = "poweringTB";
-            this.poweringTB.Size = new System.Drawing.Size(76, 20);
+            this.poweringTB.Size = new System.Drawing.Size(100, 20);
             this.poweringTB.TabIndex = 2;
             this.poweringTB.Text = "5";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(977, 67);
+            this.label2.Location = new System.Drawing.Point(811, 293);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 3;
@@ -116,7 +116,7 @@ namespace rgzTU
             // 
             // k1TB
             // 
-            this.k1TB.Location = new System.Drawing.Point(1080, 51);
+            this.k1TB.Location = new System.Drawing.Point(914, 277);
             this.k1TB.Name = "k1TB";
             this.k1TB.Size = new System.Drawing.Size(100, 20);
             this.k1TB.TabIndex = 4;
@@ -124,7 +124,7 @@ namespace rgzTU
             // 
             // t1TB
             // 
-            this.t1TB.Location = new System.Drawing.Point(1080, 77);
+            this.t1TB.Location = new System.Drawing.Point(914, 303);
             this.t1TB.Name = "t1TB";
             this.t1TB.Size = new System.Drawing.Size(100, 20);
             this.t1TB.TabIndex = 5;
@@ -132,7 +132,7 @@ namespace rgzTU
             // 
             // t2TB
             // 
-            this.t2TB.Location = new System.Drawing.Point(1080, 138);
+            this.t2TB.Location = new System.Drawing.Point(914, 364);
             this.t2TB.Name = "t2TB";
             this.t2TB.Size = new System.Drawing.Size(100, 20);
             this.t2TB.TabIndex = 8;
@@ -140,7 +140,7 @@ namespace rgzTU
             // 
             // k2TB
             // 
-            this.k2TB.Location = new System.Drawing.Point(1080, 112);
+            this.k2TB.Location = new System.Drawing.Point(914, 338);
             this.k2TB.Name = "k2TB";
             this.k2TB.Size = new System.Drawing.Size(100, 20);
             this.k2TB.TabIndex = 7;
@@ -149,7 +149,7 @@ namespace rgzTU
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(977, 128);
+            this.label3.Location = new System.Drawing.Point(811, 354);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 6;
@@ -158,7 +158,7 @@ namespace rgzTU
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1023, 170);
+            this.label4.Location = new System.Drawing.Point(857, 396);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 9;
@@ -167,7 +167,7 @@ namespace rgzTU
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1012, 201);
+            this.label5.Location = new System.Drawing.Point(846, 427);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 10;
@@ -176,7 +176,7 @@ namespace rgzTU
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(983, 229);
+            this.label6.Location = new System.Drawing.Point(568, 53);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 11;
@@ -184,7 +184,7 @@ namespace rgzTU
             // 
             // stepTB
             // 
-            this.stepTB.Location = new System.Drawing.Point(1080, 168);
+            this.stepTB.Location = new System.Drawing.Point(914, 394);
             this.stepTB.Name = "stepTB";
             this.stepTB.Size = new System.Drawing.Size(100, 20);
             this.stepTB.TabIndex = 12;
@@ -192,7 +192,7 @@ namespace rgzTU
             // 
             // timeTB
             // 
-            this.timeTB.Location = new System.Drawing.Point(1080, 199);
+            this.timeTB.Location = new System.Drawing.Point(914, 425);
             this.timeTB.Name = "timeTB";
             this.timeTB.Size = new System.Drawing.Size(100, 20);
             this.timeTB.TabIndex = 13;
@@ -200,7 +200,7 @@ namespace rgzTU
             // 
             // controlTB
             // 
-            this.controlTB.Location = new System.Drawing.Point(1080, 227);
+            this.controlTB.Location = new System.Drawing.Point(665, 51);
             this.controlTB.Name = "controlTB";
             this.controlTB.Size = new System.Drawing.Size(100, 20);
             this.controlTB.TabIndex = 14;
@@ -208,7 +208,7 @@ namespace rgzTU
             // 
             // startBTN
             // 
-            this.startBTN.Location = new System.Drawing.Point(1056, 354);
+            this.startBTN.Location = new System.Drawing.Point(665, 170);
             this.startBTN.Name = "startBTN";
             this.startBTN.Size = new System.Drawing.Size(100, 23);
             this.startBTN.TabIndex = 15;
@@ -216,19 +216,10 @@ namespace rgzTU
             this.startBTN.UseVisualStyleBackColor = true;
             this.startBTN.Click += new System.EventHandler(this.startBTN_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(449, 131);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1008, 364);
+            this.label7.Location = new System.Drawing.Point(768, 630);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 17;
@@ -236,16 +227,16 @@ namespace rgzTU
             // 
             // integratorTB
             // 
-            this.integratorTB.Location = new System.Drawing.Point(1080, 253);
+            this.integratorTB.Location = new System.Drawing.Point(665, 81);
             this.integratorTB.Name = "integratorTB";
             this.integratorTB.Size = new System.Drawing.Size(100, 20);
             this.integratorTB.TabIndex = 18;
-            this.integratorTB.Text = "1,43";
+            this.integratorTB.Text = "0,0003";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(983, 255);
+            this.label8.Location = new System.Drawing.Point(568, 83);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 13);
             this.label8.TabIndex = 19;
@@ -253,7 +244,7 @@ namespace rgzTU
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1080, 278);
+            this.textBox1.Location = new System.Drawing.Point(665, 106);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 20;
@@ -262,7 +253,7 @@ namespace rgzTU
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(977, 281);
+            this.label9.Location = new System.Drawing.Point(562, 109);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 13);
             this.label9.TabIndex = 21;
@@ -270,26 +261,36 @@ namespace rgzTU
             // 
             // powering2TB
             // 
-            this.powering2TB.Location = new System.Drawing.Point(1080, 310);
+            this.powering2TB.Location = new System.Drawing.Point(665, 138);
             this.powering2TB.Name = "powering2TB";
             this.powering2TB.Size = new System.Drawing.Size(100, 20);
             this.powering2TB.TabIndex = 22;
-            this.powering2TB.Text = "0,6";
+            this.powering2TB.Text = "0,08";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(977, 313);
+            this.label10.Location = new System.Drawing.Point(562, 141);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(71, 13);
             this.label10.TabIndex = 23;
             this.label10.Text = "Усилитель 2";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(502, 202);
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 640);
+            this.ClientSize = new System.Drawing.Size(1029, 640);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.powering2TB);
             this.Controls.Add(this.label9);
@@ -297,7 +298,6 @@ namespace rgzTU
             this.Controls.Add(this.label8);
             this.Controls.Add(this.integratorTB);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.startBTN);
             this.Controls.Add(this.controlTB);
             this.Controls.Add(this.timeTB);
@@ -341,7 +341,6 @@ namespace rgzTU
         private System.Windows.Forms.TextBox timeTB;
         private System.Windows.Forms.TextBox controlTB;
         private System.Windows.Forms.Button startBTN;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox integratorTB;
         private System.Windows.Forms.Label label8;
@@ -349,6 +348,7 @@ namespace rgzTU
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox powering2TB;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
