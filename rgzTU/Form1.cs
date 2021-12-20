@@ -10,6 +10,8 @@ namespace rgzTU
             InitializeComponent();
         }
         double vovchikChislo = 0;
+        double integr = 0;
+        double dif = 0;
         private void startBTN_Click(object sender, EventArgs e)
         {
             chart1.Series[0].Points.Clear();
@@ -30,7 +32,7 @@ namespace rgzTU
             {
                 //xPast = Convert.ToDouble(controlTB.Text);
                 epsPast = xPast - yPast; // ЦМ сумматора
-                                        
+
                 if (iterator != Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text)))
                 {
                     mas3[iterator] = t;
@@ -38,14 +40,16 @@ namespace rgzTU
                 }
                 double f = Convert.ToDouble(powering2TB.Text) * epsPast;
                 //chart1.Series[0].Points.AddXY(t, f);
-                
-                double shit = integrator(epsPast, Convert.ToDouble(stepTB.Text), Convert.ToDouble(integratorTB.Text), yPast);
-                double poop = dx(Convert.ToDouble(powering2TB.Text), Convert.ToDouble(stepTB.Text), UaPast, Uak);
-                
-                double secondDifference = (f+shit);
-               
+
+                double shit = integrator(integr, Convert.ToDouble(stepTB.Text), Convert.ToDouble(integratorTB.Text), epsPast);
+                integr = shit;
+                double poop = dx(Convert.ToDouble(textBox1.Text), Convert.ToDouble(stepTB.Text), dif, epsPast);
+                dif = epsPast;
+
+                double secondDifference = (f + shit);
+
                 UyPast = Convert.ToDouble(poweringTB.Text) * secondDifference; //ЦМ усилительного звена
-               
+
                 Uak = aperValue( //ЦМ 1 апериодического звена
                     vovchikChislo,
                     Convert.ToDouble(stepTB.Text),
@@ -62,19 +66,19 @@ namespace rgzTU
                     Convert.ToDouble(t2TB.Text),
                     Uak);
                 Console.WriteLine($"Uak {Uak} | newUak {newUak}");
-                
-                if(iterator != Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text)))
+
+                if (iterator != Convert.ToInt32(Convert.ToDouble(timeTB.Text) / Convert.ToDouble(stepTB.Text)))
                 {
                     mas1[iterator] = t;
                     mas2[iterator] = newUak;
                     iterator++;
                 }
-                
+
                 yPast = newUak;
                 UaPast = newUak;
-               
+
             }
-          
+
 
 
             for (int i = 0; i < mas1.Length; i++)
