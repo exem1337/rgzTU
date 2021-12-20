@@ -38,15 +38,14 @@ namespace rgzTU
                     mas3[iterator] = t;
                     mas4[iterator] = epsPast;
                 }
-                double f = Convert.ToDouble(powering2TB.Text) * epsPast;
-                //chart1.Series[0].Points.AddXY(t, f);
+                double f = Convert.ToDouble(powering2TB.Text) * epsPast; //п регулятор
 
-                double shit = integrator(integr, Convert.ToDouble(stepTB.Text), Convert.ToDouble(integratorTB.Text), epsPast);
+                double shit = integrator(integr, Convert.ToDouble(stepTB.Text), Convert.ToDouble(integratorTB.Text), epsPast); //интегратор
                 integr = shit;
-                double poop = dx(Convert.ToDouble(textBox1.Text), Convert.ToDouble(stepTB.Text), dif, epsPast);
+                double poop = dx(Convert.ToDouble(textBox1.Text), Convert.ToDouble(stepTB.Text), dif, epsPast); //дифферениатор
                 dif = epsPast;
 
-                double secondDifference = (f + shit);
+                double secondDifference = (f + shit); //складываем нужные комбины регуляторов для формирования П / ПИ / ПД / ПИД
 
                 UyPast = Convert.ToDouble(poweringTB.Text) * secondDifference; //ЦМ усилительного звена
 
